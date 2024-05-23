@@ -1,7 +1,12 @@
 def hello_world():
 	return "Hello World!"
 def hello_world_n(N):
-	text = ''
-	while N != 0:
-		N -= 1
-		print('Hello World!', end= ' ')
+	Hello_W = ''
+	if N != 0:
+		Hello_W = 'Hello World!'
+		while N != 0:
+			N -= 1
+			Hello_W = Hello_W + ' Hello World!'
+	else:
+		continue
+	return Hello_W
